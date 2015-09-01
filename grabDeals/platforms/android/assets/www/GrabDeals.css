@@ -1,0 +1,165 @@
+@CHARSET "utf-8";
+
+body{
+}
+.headerContainer h1{
+	text-align:center;
+	color:white;
+}
+
+#fbShareButton{
+ background: url(fb_share.png) no-repeat;
+ background-size: cover;
+ width: 10%;
+}
+
+.ui-header{
+	background:#660066 !important;
+	font-size:100% !important;
+}
+
+#navTab{
+	background:#FFE3FF;
+	color:#660066;
+}
+.homePageIntro #logo{
+	margin-left: 38%;
+	width: 30%;
+	height: 25%;
+}
+.homePageIntro ,.homePageIntro h1{
+	background-color: white;
+}
+
+.itemContainer{
+	background-color: white;
+	margin-top:5%;
+}
+.itemContainer, .homePageIntro{
+	padding:1%;
+}
+
+.homePageIntro h1{
+	color:#660066;
+	text-align:center;
+	font-size:140%;
+}
+.searchDeals, #navTab, div.ui-input-text, div.ui-select, .searchDeals label, .itemContainer, #itemImage img, #photo{
+	border-style: solid !important;
+  border-width: 1px !important;
+  border-color: #660066 !important;
+}
+
+.searchDeals{
+	margin:1%;
+	padding: 1%;
+	background-color: #FFE3FF	;
+	}
+
+div.ui-input-text, div.ui-select { 
+	width: 60!important; 
+	margin-left: 20
+}
+
+div.ui-input-btn { 
+	width: 52.5% !important; 
+	margin-left: 20%;
+	color: white !important;
+}
+
+.homePageIntro p, .searchDeals p{
+	color:#660066;
+	text-align:center;
+}
+
+/*.homePageDealsContainer .homePageDeals{
+	background-color: #238495;
+	padding:1%;
+}*/
+
+.feedContainer{
+	margin:1%;
+	padding:1%;
+}
+
+#feedTitle{
+	text-align:center;
+	background-color: #660066;
+	color:white;
+}
+
+#itemDetails{
+	color:#660066;;
+}
+
+#itemImage img{
+	margin:1% 1%;
+	max-width:100%;
+}
+
+.dealContentAndImageContainer .ui-block-a, .dealContentAndImageContainer .ui-block-b{
+	margin:1%;	
+}
+
+.titleContainer .ui-block-a{
+	width:98%;
+}
+
+.titleContainer #shareButton{
+	float: right;
+	background: url(fb_share.png) no-repeat;
+	background-size: 100% 100%;
+	width: 5%;
+}
+
+#itemDetails #grabDealButton, div.ui-input-btn { 
+	background-color:#660066 !important;
+}
+
+
+#itemDetails #grabDealButton{
+	width:90%;
+	margin-left:1%;
+	color:white;
+}
+
+#itemDetails a{
+	text-decoration: none;
+}
+
+.dealContentAndImageContainer .ui-block-a{
+	width:30%;
+}
+
+.dealContentAndImageContainer .ui-block-b{
+	width:65%;
+}
+
+.aboutContainer{
+	width: 100%;
+	color: #660066;
+	margin-top: 1%;
+	}
+
+.aboutContainer #aboutTextContainer{
+	width: 100%;
+	/*float: left;*/
+}
+.aboutContainer #aboutImageContainer{
+	width: 100%;
+	height: 50%;
+	/*float: right;*/
+}
+
+#aboutTextContainer h3, #aboutTextContainer p{
+}
+
+#photo{
+	max-width:100%;
+	/*float: right;*/
+/*-webkit-transform: rotate(20deg);
+-moz-transform: rotate(20deg);
+-o-transform: rotate(20deg);
+-ms-transform: rotate(20deg);
+transform: rotate(20deg);
+*/}

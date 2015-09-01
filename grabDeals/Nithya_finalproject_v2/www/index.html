@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta name="viewport"
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<!--     <link rel="stylesheet" type="text/css" href="css/index.css" />
+ -->    <title>Nithya's grab deals</title>
+
+    content="width=device-width, initial-scale=1, maximum-scale = 1.0, user-scalable=no">
+    <link rel="stylesheet"
+    href="jqueryMobile-1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <script src="jquery1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="jqueryMobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("feeds", "1")
+    </script>
+
+    <!-- share button plugin -->
+    <script src="share.min.js"></script>
+
+    <!--    custom css and js files -->
+    <link rel="stylesheet" href="GrabDeals.css">
+    <!--<script src="GrabDeals.js"></script>-->
+    <script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+app.initialize();
+</script>
+
+</head>
+<body>
+    <section>
+        <!-- home page -->
+        <div data-role="page" id="home">
+            <div data-role="header" class="headerContainer">
+                <h1>GRAB DEALS</h1>
+            </div>
+            <header>
+                <div class="navigationBar"></div>
+            </header>
+            <section>
+                <div class="ui-grid-solo homePageIntro">
+                    <div>
+                        <img src="logo.png" id="logo">
+                        <h1>Seize breath-taking Amazon deals before someone else lays their eyes on it using GRAB DEALS!</h1>
+                        </div>
+                </div>
+
+                <div class="searchDeals">                          
+                    <div class="ui-field-contain">
+                        <!--<label for="searchInput">Search any deal:</label> -->
+                        <input type="text" name="searchInput" id="searchInput" placeholder="Search any item">
+                        <select name="day" id="sortByInput">
+                            <option value="popular" selected="true">Popular Deals</option>
+                            <option value="new">Newest Deals</option>
+                            <option value="recent">Trending Deals</option>
+                        </select>
+                        <input type="button" name="searchSubmit" id="searchSubmit" value="SEARCH" onclick="searchDeals()">
+                    </div>
+                </div>
+                <div class="feedContainer"></div>
+            </section>
+        </div>
+
+        <!-- page two -->
+        <div data-role="page" id="allDeals">
+            <header>
+                <div data-role="header" class="headerContainer">
+                    <h1>GRAB DEALS</h1>
+                </div>
+                <div class="navigationBar"></div>
+            </header>
+            <div class="feedContainer"></div>
+        </div>
+
+        <!--about page -->
+        <div data-role="page" id="about">
+            <div data-role="header" class="headerContainer">
+                <h1>GRAB DEALS</h1>
+            </div>
+            <header>
+                <div class="navigationBar"></div>
+            </header>
+            <div class="aboutContainer">
+                <div id="aboutTextContainer">
+                    <div id="aboutImageContainer">
+                    <img id="photo" src="photo.jpg"> 
+                    </div>
+                    <p><u>Project Title:</u> Grab Amazon Deals</p>
+                    <p><u>Developer:</u> Nithya Narayanan<span><img src="LinkedInIcon.png" height="25" width="25" onclick="window.open('https://www.linkedin.com/pub/nithya-narayanan/15/a04/3b3')"></span></p>                
+                    <p><u>Features:</u></p>
+                    <p>a) Quick search of any item.</p>
+                    <p>b) Filter the deals based on their popularity, rating or Published date.</p>
+                    <p>c) in-app browser implementation.</p>
+                    <p>d) Share deals in facebook.</p>
+                    <p>e) Responsive UI. Compatible for all screen sizes</p>
+                </div>                
+            </div>
+        </div>
+
+    </section>
+
+</div>
+</body>
+</html>

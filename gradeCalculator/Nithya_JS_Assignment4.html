@@ -1,0 +1,188 @@
+<!-- Assignment 4 -->
+<!-- Nithya Narayanan -->
+<!-- Nithya_JS_Assignment4.html -->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nithya's Grading Assignment</title>
+<link href="Nithya_JS_Assignment4.css" rel="stylesheet">
+</head>
+<body>
+	<div class="page">
+		<div class="title">
+			<h1>University Of Denver</h1>
+		</div>
+
+		<div class="content">
+				<div class="navigationContent">
+				<div class="viewEnterGradesPage">
+					<form>
+<!-- 						<span>Select Student's Name</span> <select id="namesDropdownBox"> -->
+<!-- 						</select> -->
+
+						<fieldset id="attendance">
+							<legend>Attendance (10%)</legend>
+							<span> 
+								<label for="attendance1">1</label> 
+								<!-- on click event changes bg color to white if it was turned red due to an error -->
+								<input type="checkbox" id="attendance1" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance2">2</label> 
+								<input type="checkbox" id="attendance2" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance3">3</label> 
+								<input type="checkbox" id="attendance3" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance4">4</label> 
+								<input type="checkbox" id="attendance4" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance5">5</label> 
+								<input type="checkbox" id="attendance5" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance6">6</label> 
+								<input type="checkbox" id="attendance6" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance7">7</label> 
+								<input type="checkbox" id="attendance7" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance8">8</label> 
+								<input type="checkbox" id="attendance8" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance9">9</label> 
+								<input type="checkbox" id="attendance9" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span> 
+							<span> 
+								<label for="attendance10">10</label> 
+								<input type="checkbox" id="attendance10" onchange="buildArray('attendance')" onclick="setTextBoxBackgroundColor('attendance','grey')" />
+							</span><br> 
+							<span> <label id="attendanceAverage"></label>
+							</span>
+						</fieldset>
+
+						<fieldset id="assignment">
+							<legend>Assignment (60%)</legend>
+							<span> 
+								<label for="assignment1">1</label>
+								<input type="number" min="0" max="100" step="1" id="assignment1" onchange="buildArray('assignment')" onclick="setTextBoxBackgroundColor('assignment','grey')" />
+							</span> 
+							<span> 
+								<label for="assignment2">2</label> 
+								<input type="number" min="0" max="100" step="1" id="assignment2" onchange="buildArray('assignment')" onclick="setTextBoxBackgroundColor('assignment','grey')"/>
+							</span> 
+							<span> 
+								<label for="assignment3">3</label>
+								 <input type="number" min="0" max="100" step="1" id="assignment3" onchange="buildArray('assignment')" onclick="setTextBoxBackgroundColor('assignment','grey')"/>
+							</span> 
+							<span>
+								<label for="assignment4">4</label> 
+								<input type="number" min="0" max="100" step="1" id="assignment4" onchange="buildArray('assignment')" onclick="setTextBoxBackgroundColor('assignment','grey')"/>
+							</span> 
+							<span> 
+								<label for="assignment5">5</label> 
+								<input type="number" min="0" max="100" step="1" id="assignment5" onchange="buildArray('assignment')" onclick="setTextBoxBackgroundColor('assignment','grey')"/>
+							</span> 
+							<span> 
+								<label for="assignment6">6</label> 
+								<input type="number" min="0" max="100" step="1" id="assignment6" onchange="buildArray('assignment')" onclick="setTextBoxBackgroundColor('assignment','grey')" />
+							</span> 
+							<span> 
+								<label for="assignment7">7</label> 
+								<input type="number" min="0" max="100" step="1" id="assignment7" onchange="buildArray('assignment')" onclick="setTextBoxBackgroundColor('assignment','grey')"/>
+							</span> <br> 
+							<span> 
+								<label id="assignmentAverage"></label>
+							</span>
+						</fieldset>
+
+						<fieldset id="quiz">
+							<legend>Quiz (30%)</legend>
+							<span> 
+								<label for="quiz1">1</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz1" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')" />
+							</span>
+							<span> 
+								<label for="quiz2">2</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz2" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')" />
+							</span>
+							<span> 
+								<label for="quiz3">3</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz3" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')"/>
+							</span> 
+							<span> 
+								<label for="quiz4">4</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz4" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')"/>
+							</span> 
+							<span> 
+								<label for="quiz5">5</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz5" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')" />
+							</span> 
+							<span> 
+								<label for="quiz6">6</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz6" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')"/>
+							</span> 
+							<span> 
+								<label for="quiz7">7</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz7" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')"/>
+							</span> 
+							<span> 
+								<label for="quiz8">8</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz8" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')" />
+							</span> 
+							<span> 
+								<label for="quiz9">Exam</label> 
+								<input type="number" min="0" max="100" step="1" id="quiz9" onchange="buildArray('quiz')" onclick="setTextBoxBackgroundColor('quiz','grey')" />
+							</span> <br> 
+							<span> 
+								<label id="quizAverage"></label>
+							</span>
+						</fieldset>
+							<input value="Submit" type="button" onClick="submitAllValues()" id="submitAllButton">
+					</form>
+					<fieldset id="quiz">
+						<legend>Average and Projected Grade</legend>
+						<span> 
+							<label id="projectedAverage">Average:</label> <br>
+							<label id="projectedGrade">Projected Grade:</label>
+						</span>
+					</fieldset>
+				</div>
+			</div>
+			<div>
+				<div class="viewEnterArrayPage">
+					<p>Enter Grades as Array</p>
+					<p>(separate grades with comma)
+					<form>
+						<fieldset>
+							<legend>Attendance Array</legend>
+							<!-- onclick event reverts textbox background color from red to white if it was previously turned red due to an error. -->
+							<input type="text" id="attendanceArray" onclick="setTextBoxBackgroundColor('attendanceArray','white')" />
+						</fieldset>
+						<fieldset>
+							<legend>Assignment Array</legend>
+							<input type="text" id="assignmentArray" onclick="setTextBoxBackgroundColor('assignmentArray','white')" />
+						</fieldset>
+						<fieldset>
+							<legend>Quiz Array</legend>
+							<input type="text" id="quizArray" onclick="setTextBoxBackgroundColor('quizArray','white')"/>
+						</fieldset>
+						<input id="arraySubmitButton" type="button" value="submit" onclick="submitArray()" />
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<script src="Nithya_JS_Assignment4.js"></script>
+</body>
+</html>
+	

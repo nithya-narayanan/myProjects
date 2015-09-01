@@ -1,0 +1,63 @@
+/*
+Author: Nithya Narayanan
+FileName: Nithya_Assignment6.css
+Assignment6 
+*/
+@CHARSET "utf-8";
+
+#inputForm #inputFormFieldSet{
+	background-color: #C00000;
+	opacity: 0.6%;
+	color: #ffffff;
+	margin-left: 30%;
+	width: 30%;
+	font-size: 130%;
+}
+
+#searchButton{
+	margin-top: 10%;
+	margin-left: 2%;
+	font-size: 100%;
+	color: white;
+	background: #000099;
+}
+
+#searchInput_name, #searchInput_number, #searchInput_dob, #searchInput_tookOffice{
+	float: right;
+	width: 50%;
+}
+
+#inputFormFieldSet br{
+	margin-top: 4%;
+}
+
+.presidentTable, .presidentSubTable{
+	width: 100%;
+}
+
+.presidentTable, th, td, .presidentSubTable{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+.presidentTable tr:nth-child(even), .presidentSubTable tr:nth-child(even) {
+    background-color: #e8e8e8;
+    opacity: 0.6%;
+}
+.presidentTable tr:nth-child(odd), .presidentSubTable tr:nth-child(odd){
+   background-color:#c8c8c8;
+}
+.presidentTable th{
+	  background-color: #000099;
+}
+.presidentTable th, .presidentSubTable th {
+    color: white;
+    opacity: 0.6%;
+}
+.presidentSubTable th{
+	background-color: #C00000;
+}

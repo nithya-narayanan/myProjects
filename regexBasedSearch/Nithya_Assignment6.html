@@ -1,0 +1,35 @@
+<!--
+Author: Nithya Narayanan
+FileName: Nithya_Assignment6.html
+Assignment6 
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nithya's week6 assignment</title>
+  <link rel="stylesheet" type="text/css" href="Nithya_Assignment6.css">
+</head>
+<body>
+	<form id="inputForm">
+		<fieldset id="inputFormFieldSet">
+			<legend></legend>
+			<label>Name:</label>
+			<input type="text" id="searchInput_name"/><br>
+			<label>Number:</label>
+			<input type="text" id="searchInput_number"/><br>
+			<label>Date Of Birth:</label>
+			<input type="text" id="searchInput_dob"/><br>
+			<label>Took Office:</label>
+			<input type="text" id="searchInput_tookOffice"/><br>
+			<input type="button" value="Search" onclick="submitSearchQuery()" id="searchButton">
+			<input type="button" value="Show All Presidents" onclick="showAllPresidents()" id="searchButton">
+			<input type="button" value="Reset" onclick="resetInputs()" id="searchButton">
+		</fieldset>
+	</form>
+	<br>
+	<div id="searchResultSection"></div>
+<script src="Nithya_Assignment6.js"></script>
+
+</body>
+</html>

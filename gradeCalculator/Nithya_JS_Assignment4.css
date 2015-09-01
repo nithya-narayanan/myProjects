@@ -1,0 +1,125 @@
+/* Assignment4 */
+/* Author: Nithya Narayanan */
+/* File: Nithya_JS_Asssignment4.css */
+
+@CHARSET "ISO-8859-1";
+body{
+	background:url("bg.jpg");
+	background-size:cover;
+}
+.title{
+	text-align:center;
+	background-color:maroon;
+	color:white;
+	opacity:0.6;
+}
+
+#assignment span, #quiz span{
+	display:inline;
+	padding:2%;	
+}
+
+#attendance span{
+	display:inline;
+	padding:1%;	
+} 
+
+#assignment input, #quiz input{
+	width:4%;
+}
+
+#attendance input{
+	width:5%;
+}
+
+.page{
+	width:90%;
+	margin: 3% auto;
+}
+
+.content{
+	width:100%;
+}
+/* .content .navigationPanel{ */
+/* 	background-color:maroon; */
+/* 	width:18%; */
+/* 	opacity:0.4; */
+/* 	float:left; */
+/* 	text-align:center; */
+/* 	line-height: 60px; */
+/* } */
+
+.content .viewEnterArrayPage{
+	background-color:maroon;
+	width:18%;
+	opacity:0.6;
+	float:left;
+	color:white;
+}
+
+#submitAllButton{
+	width:30%;
+	margin-left:35%;
+	margin-top:2%;
+	margin-bottom:2%;
+	background-color:maroon;
+	color:white;
+}
+
+.content .navigationContent{
+	background-color:grey;
+	width:82%;
+	float:left;
+	opacity:0.7;
+}
+
+.viewEnterArrayPage p{
+	text-align:center;	
+}
+
+.viewEnterArrayPage #arraySubmitButton{
+	padding:2%;
+	margin-left:10%;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.viewEnterArrayPage input{
+	width:80%;	
+}
+
+h3{
+	border-radius: 6px;
+	background-image:linear-gradient(to top right,white, wheat);
+	border:3px solid maroon;
+	color:maroon;
+	width:90%;
+	margin:4%;
+}
+
+
+br{
+	padding:1%;
+	margin: 2%;
+}
+.viewEnterGradesPage select{
+	width:30%;
+	line-height: 2px;
+	height:2%;
+	margin:1%;
+}
+
+.viewEnterGradesPage legend{
+	font-size:100%;
+}
+
+#submitButtonHolderId{
+	height:10%;
+	width:40%;
+	color:white;
+	background-color:maroon;
+	margin-left:25%;
+	margin-top:5%;
+	padding:2%;
+	text-align:center;
+}
